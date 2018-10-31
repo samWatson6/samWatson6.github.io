@@ -12,12 +12,18 @@ const server = http.createServer(app);
 // for other settings see
 // http://webpack.github.io/docs/webpack-dev-middleware.html
 
-app.use(express.static("dist"));
+// app.use(express.static("dist"));
 
-app.get("*", (req, res) => res.sendFile(path.resolve("dist", "index.html")));
+// app.get("*", (req, res) => res.sendFile(path.resolve("dist", "index.html")));
 
 // set up env vars first
 // require('../config/passport')(passport);
+
+app.use(express.static("dist"));
+
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./dist/index.html"));
+});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
