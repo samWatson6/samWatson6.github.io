@@ -1,5 +1,5 @@
 // common server for both production and development
-const path = require("path");
+// const path = require("path");
 const express = require("express");
 const http = require("http");
 const bodyParser = require("body-parser");
@@ -22,7 +22,7 @@ const server = http.createServer(app);
 app.use(express.static("dist"));
 
 app.get("/*", function(req, res) {
-  res.sendFile("../dist/index.html");
+  res.sendFile("/dist/index.html");
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
