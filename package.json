@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A beautiful e-commerce template with a flat design.",
   "engines": {
-    "npm": ">=3"
+    "npm": "8.9.4"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
