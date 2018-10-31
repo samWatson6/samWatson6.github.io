@@ -14,6 +14,8 @@ const server = http.createServer(app);
 
 app.use(express.static("dist"));
 
+app.get('*', (req, res) => res.sendFile(path.resolve('build', 'index.html'))
+
 // set up env vars first
 // require('../config/passport')(passport);
 
