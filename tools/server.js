@@ -1,5 +1,5 @@
 // common server for both production and development
-// const path = require("path");
+const path = require("path");
 const express = require("express");
 const http = require("http");
 const bodyParser = require("body-parser");
