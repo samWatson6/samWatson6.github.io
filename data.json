@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "Key": "1",
+      "ID": "11",
+      "Title": "3-bottle gift box(es) of LOLO Albarino ",
+      "Description": "Paco & Lola \"LOLO\" Albarino, Rias Biaxas, Spain, 2013 (white)",
+      "Price": "60",
+      "imageURL": "url()",
+      "From": "Rotarty Club of Wilmette Harbor"
+    },
+    {
+      "Key": "2",
+      "ID": "22",
+      "Title": "Pkg(s) of Smoked Salmon ",
+      "Description": "Intense aroma, excellent varietal expression of citrus, grapefruit and green apple with a touch of lavender. Powerful mouth, rich in fruit nuances with hints of the aromatic herbs and highly persistent.",
+      "Price": "35/lb",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    },
+    {
+      "Key": "3",
+      "ID": "33",
+      "Title": "Box(es) of Assorted Chocolates ",
+      "Description": "Exported from Belgium directly to the North Shore. Packaged in a lovely gold-tone box with a festive ribbon, ready for gift-giving.\r\n\r\nClassic Ballotin of assorted chocolates",
+      "Price": "$25 per 1/2lb",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    },
+    {
+      "Key": "4",
+      "ID": "44",
+      "Title": "Bag(s) of Chocolate Orange Peel ",
+      "Description": "Candied orange peel dipped in bittersweet chocolate",
+      "Price": "$25 ",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    },
+    {
+      "Key": "5",
+      "ID": "55",
+      "Title": "4-bottle gift box(es) Italian Countryside Oil & Vinegar",
+      "Description": "Extra Virgin Olive Oil and Aged Balsamic Vinegar Gift Boxes.\r\nNew This Year! The “Classic Combine tion” 2-Bottle Set pairs Old Town Oil’s Signature Extra Virgin Olive Oil with Old Town Oil's 18-year style Reserve Balsamic Vinegar each in a 13 oz decorative glass bottle. The \"Work Ground the ita/ion Countryside ” 4-Bottle Set features Old Town Oil’s Reserve Balsamic Vinegar, Nana‘s Extra Virgin Olive Oil, Tuscan Herb Extra Virgin Olive Oil and Lemon White Balsamic Vinegar each in a\r\nS oz decorative glass bottle.",
+      "Price": "$45 ",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    },
+    {
+      "Key": "6",
+      "ID": "66",
+      "Title": "Box(es) of Chicago Neighborhoods Spice Blends  ",
+      "Description": "The Spice House’s four most popular seasonings each created to reflect a Chicago neighborhood and its ethnic background. Includes Bronzeville ”Galena Street” Fib Rub, Lake Shore Drive Seasoning, Old Taylor Street Cheese Sprinkle, and Old World Central Street Seosoninp.",
+      "Price": "$30 ",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    },
+    {
+      "Key": "7",
+      "ID": "77",
+      "Title": "Tin(s) of Carmel/Cheddar Popcorn ",
+      "Description": "Delicious and Homemade in Highland Park. This healthy snack is organic, gluten free, has zero trans-fat and is packaged in a festive holiday tin!\r\nChoice of Carmel, Cheddar, or Carmel/Cheddar mix.",
+      "Price": "$16 ",
+      "imageURL": "url()",
+      "From": "Rotarty"
+    }
+  ]
+}
