@@ -21,8 +21,9 @@ const server = http.createServer(app);
 
 // app.use(express.static( "dist")
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/dist/index.html"));
+app.get("*", function(req, res) {
+  const index = path.join(__dirname, "dist", "index.html");
+  res.sendFile(index);
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
