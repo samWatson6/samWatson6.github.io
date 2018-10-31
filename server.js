@@ -19,7 +19,7 @@ const server = http.createServer(app);
 // set up env vars first
 // require('../config/passport')(passport);
 
-// app.use(express.static( "dist")
+app.use(express.static("dist"));
 
 app.get("*", function(req, res) {
   const index = path.join(__dirname, "dist", "index.html");
