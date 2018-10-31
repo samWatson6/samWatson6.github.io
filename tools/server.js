@@ -1,5 +1,5 @@
 // common server for both production and development
-
+const path = require("path");
 const express = require("express");
 const http = require("http");
 const bodyParser = require("body-parser");
@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 app.use(express.static("dist"));
 
-app.get('*', (req, res) => res.sendFile(path.resolve('build', 'index.html'))
+app.get("*", (req, res) => res.sendFile(path.resolve("dist", "index.html")));
 
 // set up env vars first
 // require('../config/passport')(passport);
