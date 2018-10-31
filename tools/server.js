@@ -19,10 +19,10 @@ const server = http.createServer(app);
 // set up env vars first
 // require('../config/passport')(passport);
 
-app.use(express.static("dist"));
+app.use(express.static("../dist"));
 
 app.get("/*", function(req, res) {
-  res.sendFile("/dist/index.html");
+  res.sendFile("../dist/index.html");
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
