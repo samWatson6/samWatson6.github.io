@@ -1,13 +1,13 @@
 // common server for both production and development
-import historyApiFallback from 'connect-history-api-fallback';
-import webpack from 'webpack';
-import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
-import { chalkSuccess } from './chalkConfig';
-import config from '../webpack.config.dev';
-import express from 'express';
-import http from 'http';
-import bodyParser from 'body-parser';
+import historyApiFallback from "connect-history-api-fallback";
+import webpack from "webpack";
+import webpackDevMiddleware from "webpack-dev-middleware";
+import webpackHotMiddleware from "webpack-hot-middleware";
+import { chalkSuccess } from "./chalkConfig";
+import config from "../webpack.config.dev";
+import express from "express";
+import http from "http";
+import bodyParser from "body-parser";
 
 const environment = process.argv[2];
 const app = express();
@@ -22,31 +22,33 @@ if (environment !== "production") {
 
   const bundler = webpack(config);
 
-  app.use(express.static('src/*.html'));
+  app.use(express.static("src/*.html"));
   app.use(historyApiFallback());
   app.use(webpackHotMiddleware(bundler));
-  app.use(webpackDevMiddleware(bundler, {
-    // Dev middleware can't access config, so we provide publicPath
-    publicPath: config.output.publicPath,
+  app.use(
+    webpackDevMiddleware(bundler, {
+      // Dev middleware can't access config, so we provide publicPath
+      publicPath: config.output.publicPath,
 
-    // These settings suppress noisy webpack output so only errors are displayed to the console.
-    noInfo: false,
-    quiet: false,
-    stats: {
-      assets: false,
-      colors: true,
-      version: false,
-      hash: false,
-      timings: false,
-      chunks: false,
-      chunkModules: false
-    }
+      // These settings suppress noisy webpack output so only errors are displayed to the console.
+      noInfo: false,
+      quiet: false,
+      stats: {
+        assets: false,
+        colors: true,
+        version: false,
+        hash: false,
+        timings: false,
+        chunks: false,
+        chunkModules: false
+      }
 
-    // for other settings see
-    // http://webpack.github.io/docs/webpack-dev-middleware.html
-  }));
+      // for other settings see
+      // http://webpack.github.io/docs/webpack-dev-middleware.html
+    })
+  );
 } else {
-  app.use(express.static('dist'));
+  app.use(express.static("dist"));
 }
 
 // set up env vars first
@@ -54,7 +56,8 @@ if (environment !== "production") {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 server.listen(process.env.PORT || 8080);
 /* eslint-disable no-console */
-console.log(chalkSuccess('Express server is listening on port: ' + server.address().port));
+console.log(
+  chalkSuccess("Express server is listening on port: " + server.address().port)
+);
