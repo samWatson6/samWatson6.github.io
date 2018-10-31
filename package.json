@@ -12,7 +12,7 @@
     "start-message": "babel-node tools/startMessage.js",
     "dev": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/server.js development",
-    "open:dist": "node tools/server.js production",
+    "open:dist": "node server.js production",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "npm run lint -- --watch",
     "clean-dist": "npm run remove-dist && mkdir dist",
