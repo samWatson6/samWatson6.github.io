@@ -22,7 +22,7 @@ const server = http.createServer(app);
 app.use(express.static("dist"));
 
 app.get("/*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./dist/index.html"));
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
