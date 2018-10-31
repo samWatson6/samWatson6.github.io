@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './styles.sass';
+import "./styles.sass";
 
 class BasicInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Arshad Khan",
+      name: "Sam",
       imgSrc: ""
     };
   }
   render() {
-    return(
+    return (
       <div className="basicInfo">
         <div className="profilePic" />
         <div className="nameWrapper">

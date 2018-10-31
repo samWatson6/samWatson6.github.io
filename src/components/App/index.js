@@ -1,12 +1,20 @@
-import React, { Component, PropTypes } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import React, { Component, PropTypes } from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-import Header from '../Header/index';
-import Footer from '../Footer/index';
-import './styles.sass';
-import '../../styles/animation.sass';
+import Header from "../Header";
+import Footer from "../Footer";
+import "./styles.sass";
+import "../../styles/animation.sass";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      cart: [],
+      selectedItem: ""
+    };
+  }
   render() {
     return (
       <div className="wrapper">
@@ -14,7 +22,8 @@ class App extends Component {
         <ReactCSSTransitionGroup
           transitionName="content"
           transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
+          transitionLeaveTimeout={300}
+        >
           <div key={this.props.location.pathname}>
             {this.props.children}
             <Footer />
