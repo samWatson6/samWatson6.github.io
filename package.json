@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "A beautiful e-commerce template with a flat design.",
   "engines": {
-    "npm": "5.6.0"
+    "npm": "5.6.0",
+    "node": "8.9.4"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
