@@ -1,13 +1,13 @@
 // common server for both production and development
-import historyApiFallback from "connect-history-api-fallback";
-import webpack from "webpack";
-import webpackDevMiddleware from "webpack-dev-middleware";
-import webpackHotMiddleware from "webpack-hot-middleware";
-import { chalkSuccess } from "./chalkConfig";
-import config from "../webpack.config.dev";
-import express from "express";
-import http from "http";
-import bodyParser from "body-parser";
+const historyApiFallback = require("connect-history-api-fallback");
+const webpack = require("webpack");
+const webpackDevMiddleware = require("webpack-dev-middleware");
+const webpackHotMiddleware = require("webpack-hot-middleware");
+const chalkSuccess = require("./chalkConfig");
+const config = require("../webpack.config.dev");
+const express = require("express");
+const http = require("http");
+const bodyParser = require("body-parser");
 
 const environment = process.argv[2];
 const app = express();
