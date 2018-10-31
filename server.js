@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const server = http.createServer(app);
 
-/* eslint-disable no-console */
+/* eslint-disable nconsole */
 
 // for other settings see
 // http://webpack.github.io/docs/webpack-dev-middleware.html
