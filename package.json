@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A beautiful e-commerce template with a flat design.",
   "engines": {
-    "npm": "8.9.4"
+    "npm": "5.6.0"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
@@ -18,7 +18,7 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
     "prebuild": "npm run clean-dist",
-    "start": "npm run open:dist",
+    "start": "babel-node tools/build.js && npm run open:dist",
     "test": "node --harmony_proxies node_modules/jest/bin/jest",
     "test:cover": "npm run test -- --coverage ",
     "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
