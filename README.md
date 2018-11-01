@@ -1,6 +1,6 @@
 ## holiday-ecommerce-site
 
-A beautiful e-commerce template with flat design.
+A beautiful e-commerce application with flat design.
 
 ## Installation
 
@@ -10,10 +10,9 @@ A beautiful e-commerce template with flat design.
 
 Open `localhost:8080` to open the app!
 
-Demo - https://ecommerce-template.now.sh/
+Demo - https://wilmetterotaryclubholidaysale.herokuapp.com/
 
 ###What do the scripts in package.json do?
-Unfortunately, scripts in package.json can't be commented inline because the JSON spec doesn't support comments, so I'm providing info on what each script in package.json does here.
 
 | **Script**        | **Description**                                                                                                                                                                                                 |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
